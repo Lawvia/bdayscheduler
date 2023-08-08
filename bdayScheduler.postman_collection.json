@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "a039a2f8-5e92-4832-9c48-3d2442efcf73",
+		"name": "bdayScheduler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "delete user",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Jg3jK8F9maL7YuSpsZB5N2GTshnrMbASrK7TCAT4KByMsuSWY3mDYhCcuQqLmtgaPr8bAEBgNk2gL6eD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"skai\",\n    \"last_name\": \"mira\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3130/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3130",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert user",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Jg3jK8F9maL7YuSpsZB5N2GTshnrMbASrK7TCAT4KByMsuSWY3mDYhCcuQqLmtgaPr8bAEBgNk2gL6eD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"skai\",\n    \"last_name\": \"mira\",\n    \"birthday_date\": \"1998-08-08\",\n    \"location\": \"Asia/Tokyo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3130/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3130",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "Jg3jK8F9maL7YuSpsZB5N2GTshnrMbASrK7TCAT4KByMsuSWY3mDYhCcuQqLmtgaPr8bAEBgNk2gL6eD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"old_first_name\": \"nana\",\n    \"old_last_name\": \"mira\",\n    \"first_name\": \"oke\",\n    \"last_name\": \"diva\",\n    \"birthday_date\": \"1998-08-08\",\n    \"location\": \"Asia/Tokyo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3130/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3130",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

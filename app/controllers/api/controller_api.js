@@ -46,7 +46,7 @@ function scheduleMessage(data,timezone) {
     const bday = new Date(data.birthdayDate);
     bday.setFullYear(new Date().getFullYear());
 
-    const userTime = moment.tz(bday, timezone).set({hours: 12, minutes: 38});
+    const userTime = moment.tz(bday, timezone).set({hours: 9, minutes: 0});
 
     const timeDiff = userTime.diff(now, 'seconds');
 
