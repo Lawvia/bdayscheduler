@@ -21,7 +21,7 @@ module.exports = {
         try {
             await mysql.connectAsync()
             var sql = "SELECT * FROM ms_user " +
-                "WHERE first_name=? AND last_name = ?"
+                "WHERE first_name=? AND last_name = ? AND email_sent =0"
             var data = [firstName, lastName];
             var [result, cache] = await mysql.executeAsync(sql, data)
             await mysql.endPool()

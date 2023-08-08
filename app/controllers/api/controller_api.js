@@ -60,7 +60,7 @@ function scheduleMessage(data,timezone) {
         var [get, err] = await user.getUserByName(bind.firstName, bind.lastName);
         console.log("get ",get)
         if (err != null || !get) {
-            //user already deleted or updated
+            //user already deleted or updated or email sent flag = 1
             console.log("user already deleted or updated")
             return
         }else{
