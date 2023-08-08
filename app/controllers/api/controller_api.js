@@ -55,8 +55,6 @@ function scheduleMessage(data,timezone) {
     schedule.scheduleJob(new Date(userTime.toDate() + timeDiff * 1000), async function(bind){
         console.log('Sending scheduled message now!');
         // retry mechanism, handling error
-        
-
         var [get, err] = await user.getUserByName(bind.firstName, bind.lastName);
         console.log("get ",get)
         if (err != null || !get) {
