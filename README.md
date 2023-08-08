@@ -7,5 +7,6 @@ node index.js
 # Postman
 a postman collections available to test and hit the API in the local
 
-<img width="678" alt="image" src="https://github.com/Lawvia/bdayscheduler/assets/22694963/c525ae62-9524-4e9f-81ab-62740dbd453a">
+<img width="671" alt="image" src="https://github.com/Lawvia/bdayscheduler/assets/22694963/c6cb2e0d-83d1-49d3-b294-72ae3636d24e">
+
 
